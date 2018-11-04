@@ -1,0 +1,107 @@
+#include <fstream>
+#include <string>
+#include <map>
+#include <cstdlib>
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+#include <cstdlib>
+
+using namespace std;
+
+
+struct _register {
+    string user, password;
+};
+
+
+char dashboard();
+
+/*void store(const _register &newReg)
+{
+    ofstream file;
+    file.open("users.txt", ios_base::app);
+	if (file.fail())
+	{
+        cout << "not foung file";
+        exit(1);
+	}
+	file << newReg.user << '\n'
+         << newReg.password << '\n';
+} */
+
+
+void read()
+{
+
+    ifstream data("users.txt");
+
+    _register reg;
+
+    while(getline(data, reg.user) && getline(data, reg.password) ) {
+        cout << "User name : " << reg.user << " |  User password : " << reg.password << endl;
+
+    }
+
+}
+
+
+
+int main()
+{
+    char op;
+
+    do{
+        op = dashboard();
+        switch(op){
+            case '1':
+                system("cls");
+                break;
+
+            case '2':
+                system("cls");
+                read();
+                break;
+
+            case '3':
+                system("cls");
+                break;
+
+            case '4':
+                exit(1);
+                break;
+
+            default :
+                cout << "\nError...";
+                system("cls");
+                break;
+        }
+    }while(op!= 4);
+
+    system("PAUSE");
+	return 0;
+
+
+
+    //struct _register user;
+
+	//user.user = "user";
+	//user.password = "pass";
+	//store(user);
+
+
+
+}
+
+
+char dashboard(){
+    char op;
+    system("cls");
+    printf("\n(1)Registrar estudiante");
+    printf("\n(2)Mostrar registros");
+    printf("\n(3)Eliminar registros");
+    printf("\n(4)Salir");
+    printf("\n selecione una opcion : "); fflush(stdin);
+    cin >> op;
+    return op;
+}

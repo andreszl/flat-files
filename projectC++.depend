@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1527259604 source:c:\users\andreszl\onedrive - misena.edu.co\projects\c++\projectc++\main.cpp
+	<fstream>
+	<string>
+	<map>
+	<cstdlib>
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	<cstdlib>
+	<cstring>
+	<sstream>
+	<ctime>
+
+1527218376 source:c:\users\andreszl\onedrive - misena.edu.co\projects\c++\projectc++\src\student.cpp
+	"Student.h"
+
+1527260224 c:\users\andreszl\onedrive - misena.edu.co\projects\c++\projectc++\include\student.h
+
+1527168752 c:\users\andreszl\onedrive - misena.edu.co\projects\c++\projectc++\include\person.h
+	<iostream>
+	<stdlib.h>
+
+1527168732 source:c:\users\andreszl\onedrive - misena.edu.co\projects\c++\projectc++\src\person.cpp
+	"Person.h"
+	<iostream>
+	<stdlib.h>
+
